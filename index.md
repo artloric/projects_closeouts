@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: "All Project Case Studies"
