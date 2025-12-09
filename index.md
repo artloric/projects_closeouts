@@ -1,5 +1,3 @@
-> This case study is part of the ACEN portfolio.  
-> View also: [ACEN CE Training Programme Case Study](/training-programme/)
 
 ---
 layout: page
