@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: "Project portfolio" }}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}">
+    {% endif %}
+
+    {%- comment -%}
+    If your theme has a main stylesheet (like /assets/css/style.css),
+    this keeps the base fonts etc:
+    {%- endcomment -%}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+    <style>
+      :root {
+        --acen-teal: #007066;
+        --acen-teal-light: #e5f1ef;
+        --acen-dark: #20252a;
+        --acen-grey: #f5f7f6;
+        --accent-gold: #f3b13c;
+      }
+
+      body.case-study {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+        background: var(--acen-grey);
+        color: var(--acen-dark);
+        line-height: 1.6;
+      }
+
+      .cs-hero {
+        background: linear-gradient(135deg, var(--acen-teal), #009b8a);
+        color: #ffffff;
+        padding: 3rem 1.5rem;
+      }
+
+      .cs-hero-inner {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .cs-hero-kicker {
+        display: inline-block;
+        padding: 0.2rem 0.6rem;
+        border-radius: 999px;
+        background: rgba(0,0,0,0.2);
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .cs-hero-title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+      }
+
+      .cs-hero-subtitle {
+        font-size: 1.1rem;
+        opacity: 0.9;
+        margin-bottom: 1rem;
+      }
+
+      .cs-hero-meta {
+        font-size: 0.95rem;
+        opacity: 0.95;
+      }
+
+      .cs-hero-meta strong {
+        font-weight: 600;
+      }
+
+      .cs-top-nav-wrapper {
+        max-width: 960px;
+        margin: -1.75rem auto 3rem;
+        padding: 0 1.5rem;
+      }
+
+      .cs-top-nav {
+        background: #ffffff;
+        border-radius: 999px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        width: fit-content;
+        max-width: 100%;
+        padding: 0.5rem 0.75rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+      }
+
+      .cs-top-nav a {
+        padding: 0.3rem 0.75rem;
+        border-radius: 999px;
+        font-size: 0.85rem;
+        text-decoration: none;
+        color: var(--acen-dark);
+        white-space: nowrap;
+      }
+
+      .cs-top-nav a:hover {
+        background: var(--acen-teal-light);
+        color: var(--acen-teal);
+      }
+
+      .cs-top-nav a.cs-nav-primary {
+        background: var(--acen-teal);
+        color: #ffffff;
+      }
+
+      .cs-page {
+        max-width: 960px;
+        margin: 0 auto 3rem;
+        padding: 0 1.5rem 3rem;
+      }
+
+      .cs-page section {
+        margin-bottom: 2rem;
+        background: #ffffff;
+        padding: 1.75rem 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.03);
+      }
+
+      .cs-page section h2 {
+        color: var(--acen-teal);
+        border-bottom: 2px solid var(--acen-teal-light);
+        padding-bottom: 0.4rem;
+        margin-bottom: 1rem;
+        font-size: 1.35rem;
+      }
+
+      .cs-page section h3 {
+        color: var(--acen-dark);
+        font-size: 1.05rem;
+        margin-top: 1.1rem;
+      }
+
+      .cs-footer {
+        font-size: 0.85rem;
+        text-align: center;
+        color: #777;
+        padding: 1.5rem;
+      }
+
+      .cs-footer a {
+        color: var(--acen-teal);
+        text-decoration: none;
+      }
+
+      @media (max-width: 600px) {
+        .cs-hero {
+          padding: 2.5rem 1rem;
+        }
+        .cs-page {
+          padding: 0 1rem 2rem;
+        }
+        .cs-page section {
+          padding: 1.25rem 1rem;
+          border-radius: 0.75rem;
+        }
+        .cs-hero-title {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="case-study">
+    <header class="cs-hero">
+      <div class="cs-hero-inner">
+        {% if page.kicker %}
+          <div class="cs-hero-kicker">{{ page.kicker }}</div>
+        {% endif %}
+        <div class="cs-hero-title">
+          {{ page.hero_title | default: page.title }}
+        </div>
+        {% if page.hero_subtitle %}
+          <div class="cs-hero-subtitle">
+            {{ page.hero_subtitle }}
+          </div>
+        {% endif %}
+        <div class="cs-hero-meta">
+          {% if page.client %}
+            <strong>Client / Partners:</strong> {{ page.client }}
+            &nbsp; | &nbsp;
+          {% endif %}
+          {% if page.role %}
+            <strong>Role:</strong> {{ page.role }}
+            &nbsp; | &nbsp;
+          {% endif %}
+          {% if page.domain %}
+            <strong>Domain:</strong> {{ page.domain }}
+          {% endif %}
+        </div>
+      </div>
+    </header>
+
+    {% if page.nav %}
+      <div class="cs-top-nav-wrapper">
+        <nav class="cs-top-nav">
+          {% for item in page.nav %}
+            <a href="#{{ item.id }}"
+               class="{% if forloop.first %}cs-nav-primary{% endif %}">
+              {{ item.label }}
+            </a>
+          {% endfor %}
+        </nav>
+      </div>
+    {% endif %}
+
+    <main class="cs-page">
+      {{ content }}
+    </main>
+
+    <footer class="cs-footer">
+      © {{ site.time | date: "%Y" }}
+      {% if page.footer_text %}
+        {{ page.footer_text }}
+      {% else %}
+        {{ page.title }}
+      {% endif %}
+      {% if page.attribution %}
+        · {{ page.attribution }}
+      {% endif %}
+    </footer>
+  </body>
+</html>
