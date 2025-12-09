@@ -1,5 +1,3 @@
-> Part of the ACEN project portfolio.  
-> View also: [UFS–merSETA Research & Training Case Study](/)
 
 ---
 layout: page
