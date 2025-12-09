@@ -216,7 +216,7 @@ permalink: /
 
 <div class="top-nav">
   <a href="#overview" class="nav-primary">Overview</a>
-  <a href="#scope">Scope & Objectives</a>
+  <a href="#scope">Scope &amp; Objectives</a>
   <a href="#deliverables">Deliverables</a>
   <a href="#outcomes">Outcomes</a>
   <a href="#challenges">Challenges</a>
