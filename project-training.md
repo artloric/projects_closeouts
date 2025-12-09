@@ -28,11 +28,11 @@ permalink: /training-programme/
       --shadow-subtle: 0 10px 30px rgba(15, 23, 42, 0.65);
     }
 
-    {
+   {
       box-sizing: border-box;
     }
 
-    html, body {
+   html, body {
       margin: 0;
       padding: 0;
       background: radial-gradient(circle at top, #1e293b 0, #020617 55%);
@@ -41,29 +41,29 @@ permalink: /training-programme/
       scroll-behavior: smooth;
     }
 
-    a {
+   a {
       color: var(--accent);
       text-decoration: none;
     }
 
-    a:hover {
+   a:hover {
       text-decoration: underline;
     }
 
-    .page {
+   .page {
       max-width: 1040px;
       margin: 0 auto;
       padding: 32px 20px 60px;
     }
 
-    header {
+   header {
       display: flex;
       flex-direction: column;
       gap: 18px;
       margin-bottom: 38px;
     }
 
-    @media (min-width: 768px) {
+  @media (min-width: 768px) {
       header {
         flex-direction: row;
         justify-content: space-between;
@@ -71,31 +71,31 @@ permalink: /training-programme/
       }
     }
 
-    .brand {
+   .brand {
       display: flex;
       flex-direction: column;
       gap: 6px;
     }
 
-    .brand-title {
+   .brand-title {
       font-size: 1.5rem;
       font-weight: 600;
       letter-spacing: 0.04em;
     }
 
-    .brand-subtitle {
+  .brand-subtitle {
       font-size: 0.9rem;
       color: var(--text-muted);
     }
 
-    nav {
+   nav {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       margin-top: 10px;
     }
 
-    .nav-link {
+  .nav-link {
       padding: 7px 14px;
       border-radius: var(--radius-pill);
       border: 1px solid rgba(148, 163, 184, 0.4);
@@ -106,18 +106,18 @@ permalink: /training-programme/
       text-decoration: none;
     }
 
-    .nav-link:hover {
+   .nav-link:hover {
       border-color: var(--accent);
       color: var(--accent);
     }
 
-    main {
+   main {
       display: flex;
       flex-direction: column;
       gap: 28px;
     }
 
-    .hero {
+   .hero {
       display: grid;
       grid-template-columns: minmax(0, 3fr);
       gap: 20px;
@@ -131,14 +131,14 @@ permalink: /training-programme/
       overflow: hidden;
     }
 
-    @media (min-width: 860px) {
+  @media (min-width: 860px) {
       .hero {
         grid-template-columns: minmax(0, 3.2fr) minmax(0, 2.2fr);
         padding: 32px 28px 30px;
       }
     }
 
-    .hero::before {
+  .hero::before {
       content: "";
       position: absolute;
       inset: -40%;
@@ -147,12 +147,12 @@ permalink: /training-programme/
       pointer-events: none;
     }
 
-    .hero-main {
+  .hero-main {
       position: relative;
       z-index: 1;
     }
 
-    .pill {
+   .pill {
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -167,7 +167,7 @@ permalink: /training-programme/
       margin-bottom: 12px;
     }
 
-    .pill-dot {
+  .pill-dot {
       width: 7px;
       height: 7px;
       border-radius: 999px;
@@ -175,37 +175,37 @@ permalink: /training-programme/
       box-shadow: 0 0 12px rgba(34, 197, 94, 0.9);
     }
 
-    .hero-title {
+  .hero-title {
       font-size: 1.9rem;
       line-height: 1.15;
       margin: 0 0 12px;
     }
 
-    @media (min-width: 768px) {
+  @media (min-width: 768px) {
       .hero-title {
         font-size: 2.2rem;
       }
     }
 
-    .hero-title span {
+  .hero-title span {
       color: var(--accent);
     }
 
-    .hero-tagline {
+  .hero-tagline {
       font-size: 0.98rem;
       color: var(--text-muted);
       margin-bottom: 16px;
       max-width: 620px;
     }
 
-    .hero-meta {
+   .hero-meta {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       margin-bottom: 18px;
     }
 
-    .meta-chip {
+   .meta-chip {
       padding: 6px 12px;
       border-radius: var(--radius-pill);
       background: rgba(15,23,42,0.86);
@@ -214,18 +214,18 @@ permalink: /training-programme/
       color: var(--text-muted);
     }
 
-    .meta-chip strong {
+   .meta-chip strong {
       color: var(--text);
       font-weight: 500;
     }
 
-    .hero-actions {
+  .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
     }
 
-    .btn {
+  .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -238,42 +238,42 @@ permalink: /training-programme/
       text-decoration: none;
     }
 
-    .btn-primary {
+   .btn-primary {
       background: radial-gradient(circle at top left, #38bdf8, #0369a1);
       color: white;
       box-shadow: 0 16px 36px rgba(8, 47, 73, 0.9);
     }
 
-    .btn-primary:hover {
+   .btn-primary:hover {
       filter: brightness(1.06);
       text-decoration: none;
     }
 
-    .btn-ghost {
+  .btn-ghost {
       background: rgba(15,23,42,0.85);
       border-color: rgba(148,163,184,0.6);
       color: var(--text-muted);
     }
 
-    .btn-ghost:hover {
+  .btn-ghost:hover {
       border-color: var(--accent);
       color: var(--accent);
       text-decoration: none;
     }
 
-    .hero-aside {
+  .hero-aside {
       position: relative;
       z-index: 1;
       display: none;
     }
 
-    @media (min-width: 860px) {
+  @media (min-width: 860px) {
       .hero-aside {
         display: block;
       }
     }
 
-    .card {
+  .card {
       background: radial-gradient(circle at top, #111827 0, #020617 70%);
       border-radius: var(--radius-lg);
       padding: 16px 16px 18px;
@@ -281,19 +281,19 @@ permalink: /training-programme/
       box-shadow: var(--shadow-subtle);
     }
 
-    .card-heading {
+  .card-heading {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       margin-bottom: 8px;
     }
 
-    .card-title {
+   .card-title {
       font-size: 0.9rem;
       font-weight: 500;
     }
 
-    .card-badge {
+   .card-badge {
       font-size: 0.7rem;
       padding: 3px 9px;
       border-radius: var(--radius-pill);
@@ -303,14 +303,12 @@ permalink: /training-programme/
       text-transform: uppercase;
       letter-spacing: 0.12em;
     }
-
     .tag-cloud {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
       margin: 4px 0 10px;
     }
-
     .tag {
       font-size: 0.72rem;
       padding: 4px 9px;
@@ -319,7 +317,6 @@ permalink: /training-programme/
       border: 1px solid rgba(75,85,99,0.9);
       color: var(--text-muted);
     }
-
     .card-row {
       display: flex;
       justify-content: space-between;
@@ -329,11 +326,9 @@ permalink: /training-programme/
       border-top: 1px dashed rgba(55,65,81,0.8);
       margin-top: 4px;
     }
-
     .card-row span:first-child {
       color: var(--text-muted);
     }
-
     .badge-severity {
       font-size: 0.7rem;
       padding: 2px 8px;
@@ -341,89 +336,84 @@ permalink: /training-programme/
       border: 1px solid rgba(148,163,184,0.5);
       color: var(--text-muted);
     }
-
     .badge-severity.critical {
       border-color: #f97373;
       color: #fecaca;
       background: rgba(248, 113, 113, 0.09);
     }
-
     .badge-severity.high {
       border-color: #facc15;
       color: #fef9c3;
       background: rgba(234, 179, 8, 0.06);
     }
-
     .badge-severity.medium {
       border-color: #22c55e;
       color: #bbf7d0;
       background: rgba(34,197,94,0.08);
     }
 
-    .sections {
+   .sections {
       display: grid;
       grid-template-columns: minmax(0, 1.9fr) minmax(0, 1.4fr);
       gap: 22px;
     }
 
-    @media (max-width: 880px) {
+  @media (max-width: 880px) {
       .sections {
         grid-template-columns: minmax(0, 1fr);
       }
     }
 
-    .section {
+  .section {
       background: rgba(15, 23, 42, 0.9);
       border-radius: 18px;
       border: 1px solid rgba(30, 64, 175, 0.7);
       box-shadow: var(--shadow-subtle);
       padding: 18px 16px 16px;
     }
-
     .section h2 {
       font-size: 1.1rem;
       margin-top: 0;
       margin-bottom: 8px;
     }
 
-    .section p {
+  .section p {
       font-size: 0.9rem;
       line-height: 1.6;
       color: var(--text-muted);
     }
 
-    .section ul {
+  .section ul {
       padding-left: 18px;
       margin: 8px 0 4px;
     }
 
-    .section ul li {
+  .section ul li {
       font-size: 0.9rem;
       color: var(--text-muted);
       margin-bottom: 4px;
     }
 
-    .eyebrow {
+  .eyebrow {
       font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 0.16em;
       color: var(--text-muted);
       margin-bottom: 2px;
     }
-
     .divider {
       margin: 26px 0 8px;
       border-top: 1px dashed rgba(51,65,85,0.9);
     }
 
-    .artefacts {
+   .artefacts {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 18px;
       margin-top: 10px;
     }
 
-    .artefact-card {
+   .artefact-card {
       background: rgba(15,23,42,0.96);
       border-radius: 16px;
       border: 1px solid rgba(55,65,81,0.9);
@@ -434,21 +424,21 @@ permalink: /training-programme/
       font-size: 0.86rem;
     }
 
-    .artefact-title {
+   .artefact-title {
       font-weight: 500;
     }
 
-    .artefact-meta {
+   .artefact-meta {
       font-size: 0.78rem;
       color: var(--text-muted);
     }
 
-    .artefact-links a {
+  .artefact-links a {
       font-size: 0.8rem;
       margin-right: 10px;
     }
 
-    footer {
+   footer {
       margin-top: 36px;
       padding-top: 16px;
       border-top: 1px dashed rgba(51,65,85,0.9);
@@ -476,7 +466,7 @@ permalink: /training-programme/
       </nav>
     </header>
 
-    <main>
+   <main>
       <section class="hero" id="overview">
         <div class="hero-main">
           <div class="pill">
@@ -537,7 +527,7 @@ permalink: /training-programme/
         </aside>
       </section>
 
-      <section class="sections">
+   <section class="sections">
         <section class="section">
           <div class="eyebrow">Project context</div>
           <h2>Scope and Objectives</h2>
@@ -564,7 +554,7 @@ permalink: /training-programme/
           </p>
         </section>
 
-        <section class="section" id="risk-governance">
+  <section class="section" id="risk-governance">
           <div class="eyebrow">Risk governance</div>
           <h2>Hybrid PMI / Agile Risk Management</h2>
           <p>
@@ -586,8 +576,7 @@ permalink: /training-programme/
         </section>
       </section>
 
-      <div class="divider"></div>
-
+  <div class="divider"></div>
       <section class="section" id="artefacts">
         <div class="eyebrow">Deliverables</div>
         <h2>Key Artefacts &amp; Downloads</h2>
@@ -597,7 +586,7 @@ permalink: /training-programme/
           each item fits into the overall governance approach.
         </p>
 
-        <div class="artefacts">
+   <div class="artefacts">
           <div class="artefact-card">
             <div class="artefact-title">Risk Register (Markdown)</div>
             <div class="artefact-meta">
@@ -608,7 +597,7 @@ permalink: /training-programme/
             </div>
           </div>
 
-          <div class="artefact-card">
+   <div class="artefact-card">
             <div class="artefact-title">Risk Register (Excel Workbook)</div>
             <div class="artefact-meta">
               Excel file with three sheets: Risk Register, Risk Summary (pivot), and Heatmap (5×5 matrix).
@@ -618,7 +607,7 @@ permalink: /training-programme/
             </div>
           </div>
 
-          <div class="artefact-card">
+   <div class="artefact-card">
             <div class="artefact-title">Risk Register (CSV)</div>
             <div class="artefact-meta">
               Lightweight CSV for import into other tools, BI dashboards, or data analysis notebooks.
@@ -628,7 +617,7 @@ permalink: /training-programme/
             </div>
           </div>
 
-          <div class="artefact-card">
+   <div class="artefact-card">
             <div class="artefact-title">Risk Matrix Heatmap (PNG)</div>
             <div class="artefact-meta">
               5×5 Likelihood × Impact heatmap using a classic green–yellow–red palette for presentations.
@@ -638,7 +627,7 @@ permalink: /training-programme/
             </div>
           </div>
 
-          <div class="artefact-card">
+   <div class="artefact-card">
             <div class="artefact-title">Mermaid Heatmap Snippet</div>
             <div class="artefact-meta">
               Mermaid.js definition for embedding a risk heatmap directly into GitHub or documentation sites.
@@ -648,7 +637,7 @@ permalink: /training-programme/
             </div>
           </div>
 
-          <div class="artefact-card">
+   <div class="artefact-card">
             <div class="artefact-title">Jira Risk Backlog (CSV)</div>
             <div class="artefact-meta">
               Importable CSV mapping risks into Jira as “Risk” issues for Agile tracking.
@@ -660,9 +649,9 @@ permalink: /training-programme/
         </div>
       </section>
 
-      <div class="divider"></div>
+  <div class="divider"></div>
 
-      <section class="section" id="contact">
+ <section class="section" id="contact">
         <div class="eyebrow">About this case study</div>
         <h2>How I Use This in My Practice</h2>
         <p>
@@ -685,7 +674,7 @@ permalink: /training-programme/
       </section>
     </main>
 
-    <footer>
+  <footer>
       <span>&copy; 2025 ACEN–UFS merSETA Risk Governance Case Study · Created by Jonathan Tager</span>
       <span>Designed for GitHub Pages · Static, no tracking scripts</span>
     </footer>
