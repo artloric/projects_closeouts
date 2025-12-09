@@ -443,7 +443,7 @@ permalink: /training-programme/
       gap: 8px;
     }
   </style>
-</head>
+
 <body>
   <div class="page">
     <header>
