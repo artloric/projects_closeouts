@@ -4,13 +4,6 @@ title: "ACEN CE Training Programme Case Study"
 permalink: /training-programme/
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>ACEN–UFS merSETA Risk Management Case Study • Jonathan Tager</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Project management case study: ACEN–UFS merSETA circular economy capacity-building programme, including Agile/PMI-aligned risk register and dashboards." />
   <style>
     :root {
       --bg: #050816;
@@ -673,11 +666,5 @@ permalink: /training-programme/
         </p>
       </section>
     </main>
-
-  <footer>
-      <span>&copy; 2025 ACEN–UFS merSETA Risk Governance Case Study · Created by Jonathan Tager</span>
-      <span>Designed for GitHub Pages · Static, no tracking scripts</span>
-    </footer>
   </div>
-</body>
-</html>
+
