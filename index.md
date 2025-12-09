@@ -3,7 +3,7 @@
 
 ---
 layout: page
-title: "ACEN Project Case Study"
+title: "All Project Case Studies"
 permalink: /
 ---
 
