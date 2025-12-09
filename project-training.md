@@ -1,3 +1,9 @@
+---
+layout: page
+title: "ACEN CE Training Programme Case Study"
+permalink: /training-programme/
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +28,7 @@
       --shadow-subtle: 0 10px 30px rgba(15, 23, 42, 0.65);
     }
 
-    * {
+    {
       box-sizing: border-box;
     }
 
