@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: case-study
 title: "ACEN–UFS merSETA Risk Governance Case Study"
 permalink: /projects_closeouts/risk-governance/
 ---
