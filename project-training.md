@@ -4,7 +4,7 @@
 ---
 layout: page
 title: "ACEN CE Training Programme Case Study"
-permalink: /training-programme/
+permalink: /training-programme
 ---
 
 <!DOCTYPE html>
