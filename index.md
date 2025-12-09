@@ -67,7 +67,6 @@ permalink: /
     display: flex;
     flex-wrap: wrap;
     gap: 0.25rem;
-	
   }
 
   .top-nav a {
@@ -217,10 +216,9 @@ permalink: /
 
 <div class="top-nav">
   <a href="#overview" class="nav-primary">Overview</a>
-  <a href="#scope">Scope &amp; Objectives</a>
+  <a href="#scope">Scope & Objectives</a>
   <a href="#deliverables">Deliverables</a>
   <a href="#outcomes">Outcomes</a>
-  <a href="#impact-map">Impact Map</a>
   <a href="#challenges">Challenges</a>
   <a href="#lessons">Lessons</a>
   <a href="#recommendations">Recommendations</a>
@@ -357,78 +355,6 @@ permalink: /
     <li><strong>ACEN:</strong> reusable frameworks, templates, and credibility in CE training and research.</li>
   </ul>
 </section>
-
-<section id="impact-map">
-  <h2>5. Impact &amp; Logic Model</h2>
-
-  <p>
-    This diagram summarises how project <strong>inputs</strong> and <strong>activities</strong>
-    translated into <strong>outputs</strong>, <strong>outcomes</strong>, and longer-term
-    <strong>impact</strong> for ACEN, the client, and the wider CE ecosystem.
-  </p>
-
-```mermaid
-flowchart LR
-    subgraph Inputs
-        I1(Funding &amp; mandate)<br/>(merSETA / UFS)
-        I2(ACEN expertise)<br/>(research &amp; CE practice)
-        I3(Existing CE policy &amp; literature)
-        I4(Stakeholder networks)<br/>(industry, SMMEs, CE actors)
-    end
-
-    subgraph Activities
-        A1(Desktop research &amp;<br/>ecosystem mapping)
-        A2(Training design using<br/>Bloom's Taxonomy &amp; NQF)
-        A3(Case study selection &amp;<br/>analysis)
-        A4(Stakeholder engagement &amp;<br/>alignment workshops)
-        A5(Delivery of webinars &amp;<br/>training sessions)
-    end
-
-    subgraph Outputs
-        O1(Research reports<br/>(C3.1–C3.3))
-        O2(Training frameworks &amp;<br/>curricula (C5–C6))
-        O3(Webinars &amp; training<br/>materials (C4, C11–C15))
-        O4(Case study compendium<br/>(C8–C10))
-        O5(Project close-out &amp;<br/>evaluation (C16))
-    end
-
-    subgraph Outcomes
-        OC1(Improved CE awareness<br/>among engineers &amp; SMME mentors)
-        OC2(Clearer view of CE actors,<br/>gaps, and opportunities)
-        OC3(Reusable CE training assets<br/>for future cohorts)
-        OC4(Stronger positioning of ACEN<br/>as CE knowledge partner)
-    end
-
-    subgraph Impact
-        IM1(Contribution to South Africa's<br/>CE skills pipeline)
-        IM2(Better-informed policy &amp;<br/>programme design)
-        IM3(Scaling potential of CE training<br/>across sectors &amp; geographies)
-    end
-
-    Inputs --> Activities --> Outputs --> Outcomes --> Impact
-
-    I1 --> A1
-    I2 --> A2
-    I3 --> A1
-    I4 --> A4
-
-    A1 --> O1
-    A2 --> O2
-    A3 --> O4
-    A4 --> O5
-    A5 --> O3
-
-    O1 --> OC2
-    O2 --> OC3
-    O3 --> OC1
-    O4 --> OC2
-    O5 --> OC4
-
-    OC1 --> IM1
-    OC2 --> IM2
-    OC3 --> IM1
-    OC4 --> IM3
-```
 
 <section id="challenges">
   <h2>5. Challenges &amp; Mitigation</h2>
