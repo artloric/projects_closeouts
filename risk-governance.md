@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "ACEN–UFS merSETA Risk Governance Case Study"
 description: "Project management case study: ACEN–UFS merSETA circular economy capacity-building programme, including hybrid PMI / Agile risk register and artefacts."
 permalink: /risk-governance/
